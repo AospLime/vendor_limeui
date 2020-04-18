@@ -1,4 +1,5 @@
 # Copyright (C) 2019 The ConquerOS Project
+#           (C) 2020 The AospLime Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,9 +69,9 @@ else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation-dark_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
 else
     ifeq ($(TARGET_BOOT_ANIMATION_RES),)
-        $(warning "ConquerUI: TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
+        $(warning "LimeUI: TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
     else
-        $(warning "ConquerUI: Current bootanimation res is not supported, forcing 1080p")
+        $(warning "LimeUI: Current bootanimation res is not supported, forcing 1080p")
     endif
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation-dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
