@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/conquerui
+LOCAL_PATH := vendor/limeui
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
